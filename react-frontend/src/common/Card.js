@@ -2,14 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Card = ({ cardStyle = '', className = '', children, ...others }) => {
+const Card = ({ cardStyle = '', className = '', children }) => {
   return (
-    <div
-      className={classNames(className, 'card', {
-        'card--dark': cardStyle === 'dark',
-      })}
-      {...others}
-    >
+    <div className='card'>
       <div className='card__body'>{children}</div>
     </div>
   );
