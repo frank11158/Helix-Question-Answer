@@ -16,13 +16,17 @@ The backend is writen with Django rest framework in python and the database is M
     
     `source env/bin/activate`
     
-4. Data migration
+4. Install required packages
+
+    `pip install -r requirements.txt`
+    
+5. Data migration
 
     `python manage.py makemigrations`
     
     `python manage.py migrate`
     
-5. Run server
+6. Run server
 
     `python manage.py runserver`
     
